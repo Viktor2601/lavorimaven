@@ -21,17 +21,18 @@ public class Main {
      */
     public static void main(String[] args) {
         try {
-            String url = "jdbc:mariadb://localhost:3306";
-            Connection connection = DriverManager.getConnection(url, "tss", "ghiglieno");
-            System.out.println("Connessione eseguita...");
-            Statement cmd = connection.createStatement();
-            connection.setCatalog("DBScuola");
-            ResultSet rs = cmd.executeQuery("select * from t_corsi");
-            while(rs.next()){
-                System.out.println(rs.getString("titolo"));
+            String url = "jdbc:mariadb://localhost:3306"; // url a cui connetersi 
+            try (Connection connection = DriverManager.getConnection(url, "tss", "ghiglieno")){// connessione
+                System.out.println("Connessione eseguita...");
+                connection.setCatalog("DBScuola"); // selezione del database
+                Statement cmd = connection.createStatement(); // Statement -> oggetto per eseguire dei comandi sul database...
+                try (ResultSet rs = cmd.executeQuery("select * from t_corsi")){ // query ResultSet -> serve a memorizzare il risultato della query in memoria
+             
+                    while(rs.next()){
+                        System.out.println(rs.getString("titolo"));
+                    }
+                }
             }
-            rs.close();
-            connection.close();
         } catch (Exception e) {
             System.err.println("errore..." + e);
         }

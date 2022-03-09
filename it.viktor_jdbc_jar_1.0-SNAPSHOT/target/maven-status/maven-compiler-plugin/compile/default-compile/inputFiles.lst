@@ -1,2 +1,5 @@
-/home/tss/Viktor/maven/it.viktor_jdbc_jar_1.0-SNAPSHOT/src/main/java/it/viktor/jdbc/Corso.java
-/home/tss/Viktor/maven/it.viktor_jdbc_jar_1.0-SNAPSHOT/src/main/java/it/viktor/jdbc/Main.java
+/home/tss/Viktor/java/maven/it.viktor_jdbc_jar_1.0-SNAPSHOT/src/main/java/it/viktor/jdbc/Main.java
+/home/tss/Viktor/java/maven/it.viktor_jdbc_jar_1.0-SNAPSHOT/src/main/java/it/viktor/jdbc/Corso.java
+/home/tss/Viktor/java/maven/it.viktor_jdbc_jar_1.0-SNAPSHOT/src/main/java/it/viktor/jdbc/Provincia.java
+/home/tss/Viktor/java/maven/it.viktor_jdbc_jar_1.0-SNAPSHOT/src/main/java/it/viktor/jdbc/Anagrafica.java
+/home/tss/Viktor/java/maven/it.viktor_jdbc_jar_1.0-SNAPSHOT/src/main/java/it/viktor/jdbc/Iscrizione.java

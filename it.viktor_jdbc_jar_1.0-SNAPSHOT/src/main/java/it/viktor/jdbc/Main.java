@@ -26,7 +26,18 @@ public class Main {
         EntityManager em = emf.createEntityManager(); // oggetto che lavora sul database 
         
         em.createQuery("select e from Corso e", Corso.class).getResultList().forEach(System.out::println);
-    
+        em.createQuery("select e from Iscrizione e order by e.dataIscrizione DESC ", Iscrizione.class).getResultList().forEach(System.out::println);
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        /*
         Corso toSave = new Corso();
         toSave.setTitolo("JakartaEE");
         toSave.setCosto(BigDecimal.valueOf(120, 0));
@@ -36,7 +47,7 @@ public class Main {
         em.getTransaction().begin();
         em.persist(toSave);
         em.getTransaction().commit();
-        
+        */
     }
     
 }

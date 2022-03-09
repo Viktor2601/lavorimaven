@@ -21,13 +21,13 @@ import javax.persistence.Table;
  *
  * @author tss
  */
-@Entity
-@Table(name = "t_corsi")
+@Entity // CLASSI CHE VANNO SALAVTE NEL DATABASE
+@Table(name = "t_corsi") // TABELLA DA CUI LO PRENDE
 public class Corso implements Serializable{
-    // ATTRIBUTI
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_corso")
+    // ATTRIBUTI 
+    @Id // CHIAVE PRIMARIA
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // GENERA AUTOMATICAMENTE
+    @Column(name = "id_corso") // ANNOTAZIONI SULLA COLONNA
     private Long id;
     
     @Column(name = "titolo")

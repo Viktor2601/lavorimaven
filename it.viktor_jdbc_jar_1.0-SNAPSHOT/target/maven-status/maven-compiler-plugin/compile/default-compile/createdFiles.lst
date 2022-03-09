@@ -1,2 +1,5 @@
-it/viktor/jdbc/Main.class
+it/viktor/jdbc/Anagrafica.class
 it/viktor/jdbc/Corso.class
+it/viktor/jdbc/Iscrizione.class
+it/viktor/jdbc/Main.class
+it/viktor/jdbc/Provincia.class
